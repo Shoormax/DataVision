@@ -1,0 +1,46 @@
+/* Permet de variabiliser le CSS */
+:root {
+    --margin-top: 150px;
+}
+/*********************************/
+
+/* TRANSITIONS */
+/* Remplissage de 22px ~15% */
+@keyframes remplissage15 {
+    from{
+        margin-top: var(--margin-top);
+        height: 0
+    }
+    to{
+        margin-top:128px;
+        height: calc(var(--margin-top) - 128px );
+        background: red
+    }
+}
+
+/* Remplissage de 45px ~30% */
+@keyframes remplissage30 {
+    from{
+        margin-top: var(--margin-top);
+        height: 0
+    }
+    to{
+        margin-top:105px;
+        height: calc(var(--margin-top) - 105px );
+        background: red
+    }
+}
+
+/* Remplissage de 113PX ~75% */
+@keyframes remplissage75 {
+    from {
+        margin-top: var(--margin-top);
+        height: 0
+    }
+    to {
+        margin-top: 37px;
+        height: calc(var(--margin-top) - 37px);
+        background: red
+    }
+}
+/* FIN TRANSITIONS */

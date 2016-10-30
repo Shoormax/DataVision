@@ -11,20 +11,24 @@ html{
 }
 /*Fin propriétés de la page */
 
-/* Permet de variabiliser le CSS */
-:root {
-    --margin-top: 150px;
+/* Classes réutilisables */
+.hide {
+    display: none;
 }
-/*********************************/
 
-/* */
+.fleft {
+    clear: both;
+    float: left;
+}
+/* Fin classes réutilisables */
 
+/* Proprités des cartes */
 .fond {
     width: 150px;
     height: 55px;
     position: absolute;
-    animation: remplissage20 2s ease forwards;
-    -webkit-animation: remplissage20 2s ease forwards; /* Safari, Chrome and Opera > 12.1 */
+    animation: remplissage15 2s ease forwards;
+    -webkit-animation: remplissage15 2s ease forwards; /* Safari, Chrome and Opera > 12.1 */
 }
 .france{
     width: 150px;
@@ -32,18 +36,4 @@ html{
     float: left;
     position: relative;
 }
-
-.hide {
-    display: none;
-}
-@keyframes remplissage20 {
-    from{
-        margin-top: var(--margin-top);
-        height: 0
-    }
-    to{
-        margin-top:130px;
-        height: calc(var(--margin-top) - 130px );
-        background: red
-    }
-}
+/* Fin proprités des cartes */
