@@ -1,3 +1,4 @@
+/*  Propriétés de la page   */
 html, body{
     min-height : 100%;
     width : 100%;
@@ -6,69 +7,43 @@ html, body{
 }
 
 html{
-    animation: appear 0s ease 0s forwards;
-}
-
-#map{
-    position: absolute;
-    right: 2%;
-    top: 15%;
-}
-
-#fondmap{
-    position: absolute;
-    right: 2%;
-    bottom : 14.5%;
-    width: 700px;
     background-color: #FAF4E4;
-    transition : background-color 3s;
+}
+/*Fin propriétés de la page */
+
+/* Permet de variabiliser le CSS */
+:root {
+    --margin-top: 150px;
+}
+/*********************************/
+
+/* */
+
+.fond {
+    width: 150px;
+    height: 55px;
+    position: absolute;
+    animation: remplissage20 2s ease forwards;
+    -webkit-animation: remplissage20 2s ease forwards; /* Safari, Chrome and Opera > 12.1 */
+}
+.france{
+    width: 150px;
+    height: 150px;
+    float: left;
+    position: relative;
 }
 
-#container a{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 21px;
+.hide {
+    display: none;
 }
-
-#container a:hover{
-    background: yellow;
-}
-
-.carres{
-    display: inline-block;
-    border-radius: 7px;
-    width: 70px;
-    height: 22px;
-    background: red;
-}
-
-@keyframes appear {
-    0%{opacity: 0}
-    100%{opacity: 1; background-color: #FAF4E4;}
-}
-
-@keyframes remplissage30 {
-    from{height: 0;}
-    to{height: 200px;background: red;}
-}
-
-a:hover ~ #fondmap {
-    animation: remplissage30 3s ease forwards;
-}
-
-#div1
-{
-    background-color: #242324;
-    border: #a30002 solid 1px;
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;
-}
-#div2
-{
-    background-color: #b1baba;
-    border: #a30002 solid 1px;
-    height: 60px;
-    margin: 20px 0px 0px 20px;
-    width: 60px;
-    border-radius: 30px;
+@keyframes remplissage20 {
+    from{
+        margin-top: var(--margin-top);
+        height: 0
+    }
+    to{
+        margin-top:130px;
+        height: calc(var(--margin-top) - 130px );
+        background: red
+    }
 }
