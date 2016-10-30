@@ -1,0 +1,74 @@
+html, body{
+    min-height : 100%;
+    width : 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    animation: appear 0s ease 0s forwards;
+}
+
+#map{
+    position: absolute;
+    right: 2%;
+    top: 15%;
+}
+
+#fondmap{
+    position: absolute;
+    right: 2%;
+    bottom : 14.5%;
+    width: 700px;
+    background-color: #FAF4E4;
+    transition : background-color 3s;
+}
+
+#container a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+}
+
+#container a:hover{
+    background: yellow;
+}
+
+.carres{
+    display: inline-block;
+    border-radius: 7px;
+    width: 70px;
+    height: 22px;
+    background: red;
+}
+
+@keyframes appear {
+    0%{opacity: 0}
+    100%{opacity: 1; background-color: #FAF4E4;}
+}
+
+@keyframes remplissage30 {
+    from{height: 0;}
+    to{height: 200px;background: red;}
+}
+
+a:hover ~ #fondmap {
+    animation: remplissage30 3s ease forwards;
+}
+
+#div1
+{
+    background-color: #242324;
+    border: #a30002 solid 1px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+#div2
+{
+    background-color: #b1baba;
+    border: #a30002 solid 1px;
+    height: 60px;
+    margin: 20px 0px 0px 20px;
+    width: 60px;
+    border-radius: 30px;
+}
