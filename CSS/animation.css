@@ -1,10 +1,10 @@
 /* TRANSITIONS */
+
 /* Remplissage
  *
- * @param {int}
- *
- *
-*/
+ * @param {int} --remplissage   Le pourcentage de remplissage
+ * @param {int} --map-size      La taille des cartes
+ */
 @keyframes remplissage {
     from {
         margin-top: var(--map-size);
