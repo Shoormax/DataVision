@@ -1,3 +1,9 @@
+/* Permet de variabiliser le CSS */
+:root {
+    --map-size: 250px;
+    --horloge-size: 150px
+}
+/*********************************/
 /*  Propriétés de la page   */
 html, body{
     min-height : 100%;
@@ -8,6 +14,22 @@ html, body{
 
 html{
     background-color: #FAF4E4;
+}
+
+#container {
+    width:100%;
+    height: 75%;
+    margin-top:0;
+
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+
+    /* Safari and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
 }
 /*Fin propriétés de la page */
 
@@ -20,20 +42,102 @@ html{
     clear: both;
     float: left;
 }
+
+.clear {
+    clear: both;
+}
 /* Fin classes réutilisables */
 
 /* Proprités des cartes */
 .fond {
-    width: 150px;
+    width: var(--map-size);
     height: 55px;
     position: absolute;
-    animation: remplissage15 2s ease forwards;
-    -webkit-animation: remplissage15 2s ease forwards; /* Safari, Chrome and Opera > 12.1 */
+    z-index: 3;
 }
+
+#fond62 {
+    --remplissage: 62;
+    animation: remplissage 2s ease forwards;
+    -webkit-animation: remplissage 2s ease forwards; /* Safari, Chrome and Opera > 12.1 */
+}
+
+#fond34 {
+    --remplissage: 34;
+    animation: remplissage 2s ease forwards;
+    -webkit-animation: remplissage 2s ease forwards; /* Safari, Chrome and Opera > 12.1 */
+}
+
+#fond004 {
+    --remplissage: 75;
+    animation: remplissage 2s ease forwards;
+    -webkit-animation: remplissage 2s ease forwards; /* Safari, Chrome and Opera > 12.1 */
+}
+
 .france{
-    width: 150px;
-    height: 150px;
-    float: left;
+    height: var(--map-size);
+    width: var(--map-size);
     position: relative;
+    z-index: 4;
 }
 /* Fin proprités des cartes */
+
+/* CSS de l'horloge */
+#retard{
+    margin-left: 75px;
+    height: var(--horloge-size);
+    width: var(--horloge-size);
+    animation: horloge 4s ease forwards;
+    -webkit-animation: horloge 4s ease forwards; /* Safari, Chrome and Opera > 12.1 */
+}
+/* Fin CSS de l'horloge */
+
+/* Texte de la page */
+.texte {
+    font-family: "Montserrat";
+    color: rgb(101, 23, 23);
+    font-size: 4em;
+    font-weight: bold;
+    /*text-shadow: 2px 2px rgba(101, 23, 23, 0.7);*/
+}
+
+#infoRetard {
+    animation: horloge 4s ease forwards;
+    -webkit-animation: horloge 4s ease forwards; /* Safari, Chrome and Opera > 12.1 */
+    width: 350px;
+}
+/* Fin texte de la page */
+
+#intro {
+    width: 65%;
+    font-family: "Montserrat";
+    font-size: 3.5em;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+#infosCarteChiffre62{
+    margin-top: 3%;
+    font-size: 2em;
+    margin-left: 6%;
+    animation-delay: 5s;
+    animation: horloge 5s ease forwards;
+    -webkit-animation-delay: 5s; /* Safari 4.0 - 8.0 */
+    -webkit-animation: horloge 5s ease forwards; /* Safari, Chrome and Opera > 12.1 */
+}
+
+#infosCarteText62{
+    margin-top: 5%;
+    margin-left: 4%;
+    -webkit-animation: horloge 5s ease forwards; /* Safari, Chrome and Opera > 12.1 */
+    animation: horloge 5s ease forwards;
+
+}
+
+.infosCarte {
+    position: absolute;
+    font-size: 1.4em;
+    font-weight: bold;
+    z-index: 5;
+}
