@@ -10,6 +10,7 @@
 function compteur(elId, index, vitesse, max){
     var accelerate = (max - (max*25)/100);
     var div = document.getElementById(elId);
+    this.count = count();
     var timer;
 
     function count(){
