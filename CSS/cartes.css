@@ -1,0 +1,79 @@
+/* Infos liées aux cartes */
+#infosCarteChiffre62{
+    color: black;
+    margin-top: 3.5%;
+    font-size: 2em;
+    margin-left: 6.5%;
+}
+
+#infosCarteText62{
+    color: #FAF4E4;
+    margin-top: 5.5%;
+    margin-left: 4.5%;
+
+}
+
+#infosCarteChiffre34{
+    color: black;
+    margin-top: 7.5%;
+    font-size: 2em;
+    margin-left: 7.2%;
+}
+
+#infosCarteText34{
+    color : #FAF4E4;
+    margin-top: 9.5%;
+    margin-left: 5.2%;
+
+}
+
+.infosCarte {
+    position: absolute;
+    font-size: 1.4em;
+    font-weight: bold;
+    z-index: 5;
+}
+
+#tableCarte {
+    padding-top: 3%;
+    margin: auto;
+    -webkit-animation: delayappear 11s ease forwards;
+    animation: delayappear 11s ease forwards;
+}
+
+#carte34 {
+    padding-left: 10%;
+}
+
+#tableCarte td {
+    font-family: "Roboto";
+    font-weight: 100;
+}
+
+/* Proprités des cartes */
+.fond {
+    width: var(--map-size);
+    height: 55px;
+    position: absolute;
+    z-index: 3;
+    --background-color: #006515;
+    animation: remplissage 8s ease forwards;
+    -webkit-animation: remplissage 8s ease forwards;
+}
+
+#fond62 {
+    --remplissage: 62;
+}
+
+#fond34 {
+    --remplissage: 34;
+}
+
+.france{
+    height: var(--map-size);
+    width: var(--map-size);
+    position: relative;
+    z-index: 4;
+}
+/* Fin proprités des cartes */
+/* Fin infos cartes */

@@ -9,3 +9,9 @@ RECHERCHE RECYCLAGE FRANCE
 360kg/hab/an
 
 Retard 10 à 20 ans sur les autres pays
+
+Carton : 75%
+Verre : 60%
+Conserves : 55%
+Alu : 35%
+Plastique : 20%

@@ -1,0 +1,135 @@
+#graphs {
+    --graph-height: 300px;
+    width: 600px;
+    height: var(--graph-height);
+    list-style: none;
+    position: relative;
+    margin: 3% auto auto auto;
+    padding: 0;
+    background: #918d84;
+}
+
+#graphs li {
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+}
+
+#graphs .barre {
+    width: 80px;
+    color: #000;
+}
+
+#graphs .barre p {
+    font-weight: bold;
+    font-family: "Roboto";
+    font-size: 1.4em;
+    color : black;
+    margin: 5px 0 0;
+    padding: 0;
+}
+
+#graphs #cln1 {
+    --remplissage: 75;
+    box-shadow: 4px -2px 0px 2px rgba(177, 99, 67, 0.77);
+    --background-color: #b16343;
+    background-color: rgba(221, 129, 80, 0.57);
+    animation: remplissage 8s ease forwards;
+    -webkit-animation: remplissage 8s ease forwards;
+}
+
+#graphs #cln2 {
+    --remplissage: 55;
+    box-shadow: 4px -2px 0px 2px rgba(68, 177, 67, 0.78);
+    --background-color: #44B143;
+    background-color: rgba(79, 215, 78, 0.31);
+    animation: remplissage 8s ease forwards;
+    -webkit-animation: remplissage 8s ease forwards;
+}
+
+#graphs #cln3 {
+    --remplissage: 60;
+    box-shadow: 4px -2px 0px 2px rgba(198, 255, 29, 0.75);
+    --background-color: #c6ff1d;
+    background-color: rgba(198, 255, 29, 0.44);
+    animation: remplissage 8s ease forwards;
+    -webkit-animation: remplissage 8s ease forwards;
+}
+
+#graphs #cln4 {
+    --remplissage: 35;
+    box-shadow: 4px -2px 0px 2px rgba(172, 172, 172, 0.6);
+    --background-color: #ACACAC;
+    background-color: rgba(220, 220, 220, 0.58);
+    animation: remplissage 8s ease forwards;
+    -webkit-animation: remplissage 8s ease forwards;
+}
+
+#graphs #cln5 {
+    --remplissage: 20;
+    box-shadow: 4px -2px 0px 2px rgba(122, 158, 236, 0.77);
+    --background-color: #6f93dd;
+    background-color: rgba(133, 171, 255, 0.59);
+    animation: remplissage 8s ease forwards;
+    -webkit-animation: remplissage 8s ease forwards;
+}
+
+.clnCarton {
+    left: 20px;
+}
+
+.clnConserves {
+    left: 120px;
+}
+
+.clnVerre {
+    left: 240px;
+}
+
+.clnAluminium {
+    left: 360px;
+}
+
+.clnPlastique {
+    left: 480px;
+}
+
+/* Texte graphs */
+#texteGraphs li {
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+}
+
+#texteGraphs {
+    width: 600px;
+    height: var(--graph-height);
+    list-style: none;
+    position: relative;
+    margin: 3% auto auto auto;
+    padding: 0;
+}
+
+#texteGraphs .barre {
+    width: 80px;
+    color: #000;
+}
+
+#texteGraphs .barre p {
+    font-family: "Roboto";
+    font-weight: bold;
+    color: red;
+    margin: 5px 0 0;
+    padding: 0;
+}
+/* Fin texte graphs */

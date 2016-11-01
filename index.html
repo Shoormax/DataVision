@@ -1,39 +1,73 @@
 <HTML>
-    <head>
-        <link href="CSS/css.css" rel="stylesheet" type="text/css" />
-        <link href="CSS/animation.css" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <title>Le recyclage en France</title>
-    </head>
-        <body>
-        <div id="intro">En France, 427 millions de tonnes de déchets sont produits par an</div>
-        <div id="container">
-            <table>
-                <tr>
-                    <td>
-                        <div class="infosCarte" id="infosCarteChiffre62">62%</div>
-                        <div class="infosCarte" id="infosCarteText62">Sont récyclés</div>
-                        <div id="fond62" class="fond" ></div>
-                        <img class="france" src="img/boldFrance.min.png">
-                    </td>
-                    <td>
-                        <div class="infosCarte" id="infosCarteChiffre34">34%</div>
-                        <div class="infosCarte" id="infosCarteText34">mis en décharge</div>
-                        <div id="fond34" class="fond" ></div>
-                        <img class="france" src="img/boldFrance.min.png">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img id="retard" src="img/Horloge.min.png">
-                    </td>
-                    <td id="infoRetard">
-                        <span class="texte">15 ans</span>
-                    </td>
-                </tr>
-            </table>
+<head>
+    <link href="CSS/css.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/animation.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/cartes.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/graph.css" rel="stylesheet" type="text/css" />
+    <link href="font/fontello-5cf4ce55/css/fontello.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Coiny|Lobster|Montserrat|Raleway" rel="stylesheet">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Le recyclage en France</title>
+</head>
+<body>
+
+<div id="container">
+    <div id="entete">
+        <div class="intros fleft" id="intro"><span>Le recyclage en France</span></div>
+        <div class="intros fright" id="trashCan">
+            <div title="Code: 0xe83d" class="the-icons span3">
+                <i class="demo-icon icon-trash"></i>
+            </div>
         </div>
-        <div id="footer">OLA</div>
-    </body>
+    </div>
+    <div id="souscontainer">
+        <div class="textPart"><span id="compteurDechet"></span> millions de tonnes de déchets / an</div>
+        <table id="tableCarte">
+            <tr>
+                <td>
+                    <div class="infosCarte" id="infosCarteChiffre62"><span id="compteur62"></span> %</div>
+                    <div class="infosCarte" id="infosCarteText62">sont récyclés</div>
+                    <div id="fond62" class="fond"></div>
+                    <img class="france" src="img/boldFranceFull.min.png">
+                </td>
+                <td id="carte34">
+                    <div class="infosCarte" id="infosCarteChiffre34"><span id="compteur34"></span> %</div>
+                    <div class="infosCarte" id="infosCarteText34">sont mis en <br>décharge</div>
+                    <div id="fond34" class="fond"></div>
+                    <img class="france" src="img/boldFranceFull.min.png">
+                </td>
+            </tr>
+        </table>
+        <div class="textPart">Recyclage par catégorie</div>
+        <ul  id="graphs">
+            <li class="barre clnCarton" id="cln1">
+                <p>75 %</p>
+            </li>
+            <li class="barre clnConserves" id="cln2">
+                <p>55 %</p>
+            </li>
+            <li class="barre clnVerre" id="cln3">
+                <p>60 %</p>
+            </li>
+            <li class="barre clnAluminium" id="cln4">
+                <p>35%</p>
+            </li>
+            <li class="barre clnPlastique" id="cln5">
+                <p>20 %</p>
+            </li>
+        </ul>
+        <ul id="texteGraphs">
+            <li class="barre clnCarton"><p>Carton</p></li>
+            <li class="barre clnConserves"><p>Conserves</p></li>
+            <li class="barre clnVerre"><p>Verre</p></li>
+            <li class="barre clnAluminium"><p>Aluminium</p></li>
+            <li class="barre clnPlastique"><p>Plastique</p></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+
+<script src="js/compteur.js"></script>
+
 </HTML>

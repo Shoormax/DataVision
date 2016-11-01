@@ -6,24 +6,50 @@
  * @param {int} --map-size      La taille des cartes
  */
 @keyframes remplissage {
-    from {
+    0% {
+        height: 0;
         margin-top: var(--map-size);
-        height: 0
     }
-    to {
+    66% {
+
+
+    }
+    100% {
         margin-top: calc(var(--map-size) - (var(--map-size) * var(--remplissage))/100);
         height: calc(var(--map-size) - calc(var(--map-size) - (var(--map-size) * var(--remplissage))/100));
-        background: rgba(136, 2, 67, 0.82)
+        background: var(--background-color);
     }
 }
 
 /* Apparition de l'horloge */
-@keyframes horloge {
+@keyframes appear {
     from{
         opacity: 0;
     }
     to{
         opacity:1;
+    }
+}
+
+@keyframes delayappear {
+    0% {
+        opacity: 0;
+    }
+    50% {
+
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@keyframes rotate {
+    0%{
+        font-size: 6em;
+    }
+    100% {
+        font-size: 2.2em;;
+        transform:rotate(360deg);
     }
 }
 /* FIN TRANSITIONS */
