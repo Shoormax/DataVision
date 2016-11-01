@@ -2,8 +2,9 @@
 
 /* Remplissage
  *
- * @param {int} --remplissage   Le pourcentage de remplissage
- * @param {int} --map-size      La taille des cartes
+ * @param {int}     --remplissage       Le pourcentage de remplissage
+ * @param {strinf}  --background-color  Le coleur du fond
+ * @param {int}     --map-size          La taille des cartes
  */
 @keyframes remplissage {
     0% {
@@ -47,8 +48,12 @@
     0%{
         font-size: 6em;
     }
+    75%{
+        font-size: 2.2em;
+        transform:rotate(420deg);
+    }
     100% {
-        font-size: 2.2em;;
+
         transform:rotate(360deg);
     }
 }

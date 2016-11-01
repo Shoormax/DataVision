@@ -58,7 +58,8 @@ html{
     top: 5%;
     font-size: 2.2em;
     right: 30.3%;
-    animation:rotate 4s linear;
+    animation:rotate 6s linear;
+    -webkit-animation: rotate 6s linear;
 }
 /* Fin phrase d'intro */
 

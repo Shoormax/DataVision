@@ -9,12 +9,11 @@
  */
 function compteur(elId, index, vitesse, max){
     var accelerate = (max - (max*25)/100);
-    var compteur = document.getElementById(elId);
-    this.count = count();
+    var div = document.getElementById(elId);
     var timer;
 
     function count(){
-        compteur.innerHTML = index;
+        div.innerHTML = index;
         index ++;
         timer=setTimeout(count, vitesse);
         if(index == max +1) {
