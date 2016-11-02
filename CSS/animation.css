@@ -11,9 +11,9 @@
         height: 0;
         margin-top: var(--map-size);
     }
-    66% {
-
-
+    25% {
+        height: 0;
+        margin-top: var(--map-size);
     }
     100% {
         margin-top: calc(var(--map-size) - (var(--map-size) * var(--remplissage))/100);

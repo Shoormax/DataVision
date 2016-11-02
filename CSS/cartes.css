@@ -1,30 +1,28 @@
 /* Infos liées aux cartes */
 #infosCarteChiffre62{
     color: black;
-    margin-top: 3.5%;
+    margin-top: 55px;
     font-size: 2em;
-    margin-left: 6.5%;
+    margin-left: 115px;
 }
 
 #infosCarteText62{
     color: #FAF4E4;
-    margin-top: 5.5%;
-    margin-left: 4.5%;
-
+    margin-top: 100px;
+    margin-left: 70px;
 }
 
 #infosCarteChiffre34{
     color: black;
-    margin-top: 7.5%;
+    margin-top: 122px;
     font-size: 2em;
-    margin-left: 7.2%;
+    margin-left: 126px;
 }
 
 #infosCarteText34{
     color : #FAF4E4;
-    margin-top: 9.5%;
-    margin-left: 5.2%;
-
+    margin-top: 162px;
+    margin-left: 95px;
 }
 
 .infosCarte {
